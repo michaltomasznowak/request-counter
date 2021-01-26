@@ -15,7 +15,7 @@ import java.util.Collections;
 @ControllerAdvice
 public class RestTemplateResponseErrorHandler {
     public static final String ERROR_HTTP_CLIENT = "Problem with call request ";
-    public static final String ERROR_CALCULATION = "Problem with call request ";
+    public static final String ERROR_CALCULATION = "Problem with calculation ";
 
     @ExceptionHandler(HttpClientErrorException.class)
     public ResponseEntity<ApiError> validateHttpClientErrorException(HttpClientErrorException ex){
